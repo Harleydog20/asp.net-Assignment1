@@ -66,7 +66,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="gameCalc.aspx" />
+    <Content Include="default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -77,12 +77,12 @@
     <Compile Include="default.Master.designer.cs">
       <DependentUpon>default.Master</DependentUpon>
     </Compile>
-    <Compile Include="gameCalc.aspx.cs">
-      <DependentUpon>gameCalc.aspx</DependentUpon>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="gameCalc.aspx.designer.cs">
-      <DependentUpon>gameCalc.aspx</DependentUpon>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

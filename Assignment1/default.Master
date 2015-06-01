@@ -25,7 +25,9 @@
     <%-- navigation --%>
     <nav class="navbar navbar-inverse">
         <a class="navbar-brand" href="gameCalc.aspx">Assignment 1</a>
-    </nav>    <div class="container">        <h1>Game Calculator</h1>
+    </nav>
+    <div class="container">
+        <h1>Game Calculator</h1>
         <p class="text-warning">All fields are required. No ties or draws are allowed.</p>
         <form id="form1" runat="server">
         <div>
