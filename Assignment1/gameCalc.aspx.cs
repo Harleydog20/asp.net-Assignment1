@@ -18,6 +18,7 @@ namespace Assignment1
         {
             int wins = 0;
             int losses = 0;
+            //add up wins and losses
             if (rblResult1.SelectedValue == "win")
             {
                 wins++;
@@ -50,13 +51,20 @@ namespace Assignment1
             {
                 losses++;
             }
+            //calculate win percent
             double winningPercent = wins / 4;
+            //add up score
             int scored = Convert.ToInt32(txtScored1.Text) + Convert.ToInt32(txtScored2.Text) + Convert.ToInt32(txtScored3.Text) + Convert.ToInt32(txtScored4.Text);
+            //add up allowed score
             int allowed = Convert.ToInt32(txtAllowed1.Text) + Convert.ToInt32(txtAllowed2.Text) + Convert.ToInt32(txtAllowed3.Text) + Convert.ToInt32(txtAllowed4.Text);
+            //calculate differential
             int differential = scored - allowed;
+            //add up total attendance
             int totalAtt = Convert.ToInt32(txtSpectators1.Text) + Convert.ToInt32(txtSpectators2.Text) + Convert.ToInt32(txtSpectators3.Text) + Convert.ToInt32(txtSpectators4.Text);
+            //calculate attendance average
             int averageAtt = totalAtt / 4;
 
+            //send the output messages to their labels
             String results = "";
             results = "Wins: " + wins;
             lblWins.Text = results;
